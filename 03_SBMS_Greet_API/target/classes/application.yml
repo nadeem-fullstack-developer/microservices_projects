@@ -1,0 +1,24 @@
+server:
+  port: 8081
+  
+
+
+spring:
+  application:
+    name: Greet-API
+  boot:
+    admin:
+      client:
+        url:  http://localhost:1111/
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
